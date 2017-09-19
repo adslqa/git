@@ -39,7 +39,7 @@ write_integration_script() {
 		exit 2
 	fi
 	if [ "$1" != 1 ]; then
-		echo -e "Unsupported core.fsmonitor hook version.\n" >&2
+		echo >&2 "Unsupported core.fsmonitor hook version."
 		exit 1
 	fi
 	printf "untracked\0"
